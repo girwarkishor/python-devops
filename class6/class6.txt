@@ -1,0 +1,3 @@
+arg parsing
+main == name
+class variables

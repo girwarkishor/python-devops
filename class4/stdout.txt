@@ -1,0 +1,90 @@
+Microsoft Windows [Version 10.0.19042.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\E7240>python
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> k = (1,2,3,4)
+>>> k
+(1, 2, 3, 4)
+>>> k[0] = 9
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> k = ([1,2,3],6,4,8)
+>>> k
+([1, 2, 3], 6, 4, 8)
+>>> k[0]
+[1, 2, 3]
+>>> k[0][0]
+1
+>>> k[0][0] = "hi"
+>>> k
+(['hi', 2, 3], 6, 4, 8)
+>>> type(k)
+<class 'tuple'>
+>>> dir(k)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> k.count(6)
+1
+>>> k
+(['hi', 2, 3], 6, 4, 8)
+>>> k = {"a":123, "b":345}
+>>> k["a"]
+123
+>>> k = {"a":123, "b":345, "a":"hi"}
+>>> k
+{'a': 'hi', 'b': 345}
+>>> print(type(k))
+<class 'dict'>
+>>> dir(k)
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> h = ("a","b","c")
+>>> j = ("hi")
+>>> s = {}
+>>> s
+{}
+>>> s.fromkeys(h,j)
+{'a': 'hi', 'b': 'hi', 'c': 'hi'}
+>>> s
+{}
+>>> b = s.fromkeys(h,j)
+>>> b
+{'a': 'hi', 'b': 'hi', 'c': 'hi'}
+>>> b["g"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'g'
+>>> b.get("g", "key doesn't exist")
+"key doesn't exist"
+>>>  b.get("a", "key doesn't exist")
+  File "<stdin>", line 1
+    b.get("a", "key doesn't exist")
+    ^
+IndentationError: unexpected indent
+>>> b.get("a", "key doesn't exist")
+'hi'
+>>> b.items()
+dict_items([('a', 'hi'), ('b', 'hi'), ('c', 'hi')])
+>>> b.keys()
+dict_keys(['a', 'b', 'c'])
+>>> b
+{'a': 'hi', 'b': 'hi', 'c': 'hi'}
+>>> b.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pop expected at least 1 arguments, got 0
+>>> b.pop("a")
+'hi'
+>>> b
+{'b': 'hi', 'c': 'hi'}
+>>> b.setdefault("happy", "done")
+'done'
+>>> b
+{'b': 'hi', 'c': 'hi', 'happy': 'done'}
+>>> b.update({'k': "hi"})
+>>> b
+{'b': 'hi', 'c': 'hi', 'happy': 'done', 'k': 'hi'}
+>>> b.values()
+dict_values(['hi', 'hi', 'done', 'hi'])
+>>>

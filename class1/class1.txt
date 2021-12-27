@@ -1,0 +1,12 @@
+gitlab account
+
+
+
+Vagrant setup:
+
+https://www.youtube.com/watch?v=bzayQVYFqgA&ab_channel=Visualpath
+
+
+python3.6 install:
+
+https://www.youtube.com/watch?v=uZbaYeYGYRQ&ab_channel=ChuckSeverance

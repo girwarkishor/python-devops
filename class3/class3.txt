@@ -1,0 +1,19 @@
+Lists = []   #mutable
+
+    input  k
+    check dir
+
+    while applying it, it may update the input variable or it may return data
+
+
+'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
+
+tuple
+dict
+
+
+
+k --> address of list
+(sdfs, esdfsd, eff)
+
+

@@ -1,0 +1,41 @@
+https://gitlab.com/parameswara/devops-eswar
+IDE: pycharm
+
+
+python imp points
+
+
+memory/.pyc-compilation/
+
+
+debugger - pdb
+
+oops
+
+
+python basics:
+
+type   int/str/float
+dir
+index
+mutable
+
+
+keywords/built in functions
+
+ 
+j
+['kuna']
+[0123]
+[-4,-3,-2,-1]
+
+outbound = outbound - 1
+
+
+
+
+
+
+[0, 1, 2, 3, ....]
+[-n, .....,-3,-2,-1]
+{}
