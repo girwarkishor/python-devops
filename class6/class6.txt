@@ -1,3 +1,7 @@
-arg parsing
-main == name
-class variables
+#arg parsing
+#main == name
+#class variables
+
+import argparse
+
+
