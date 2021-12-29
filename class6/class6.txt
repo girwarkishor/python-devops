@@ -1,7 +1,5 @@
 #arg parsing
 #main == name
-#class variables
-
 import argparse
 
 
