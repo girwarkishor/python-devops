@@ -10,9 +10,16 @@ class GetConfig:
                         }
 
     def overwrite_config(self, userdata):
+        # assignment # static method
+        # get each key value and update each key # cpu = userdata.get("cpu", 1)
         self.config.update(userdata)
         return self.config
 
+    def check_config(self, userdata):
+        if not "shape" in userdata:
+            raise KeyError("shape doesn't exist in config")
+        # shape = userdata["shape"]
+        # return shape
 
 def main():
     """
@@ -27,6 +34,13 @@ def main():
     with open(filename, "r") as config_data:
         data = config_data.read()
         dict_data = json.loads(data)
+        try:
+            config.check_config(dict_data)
+        except KeyError as e:
+            print("Exception occured is", str(e))
+            exit(0)
+        else:
+            print("validations are succesfull")
         config_dict = config.overwrite_config(dict_data)
         print(config_dict)
 
