@@ -1,0 +1,12 @@
+Elasticsearch
+
+docker container:
+docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.16.1
+
+'autoscaling', 'bulk', 'cat', 'ccr', 'clear_scroll', 'close', 'close_point_in_time', 'cluster', 'count', 'create', 'dangling_indices', 'data_frame', 'delete',
+ 'delete_by_query', 'delete_by_query_rethrottle', 'delete_script', 'deprecation', 'enrich', 'eql', 'exists', 'exists_source', 'explain', 'features', 'field_caps',
+  'fleet', 'get', 'get_script', 'get_script_context', 'get_script_languages', 'get_source', 'graph', 'ilm', 'index', 'indices', 'info', 'ingest', 'license',
+   'logstash', 'mget', 'migration', 'ml', 'monitoring', 'msearch', 'msearch_template', 'mtermvectors', 'nodes', 'open_point_in_time', 'ping', 'put_script',
+    'rank_eval', 'reindex', 'reindex_rethrottle', 'remote', 'render_search_template', 'rollup', 'scripts_painless_execute', 'scroll', 'search', 'search_mvt',
+    'search_shards', 'search_template', 'searchable_snapshots', 'security', 'shutdown', 'slm', 'snapshot', 'sql', 'ssl', 'tasks', 'terms_enum', 'termvectors',
+     'text_structure', 'transform', 'transport', 'update', 'update_by_query', 'update_by_query_rethrottle', 'watcher', 'xpack']

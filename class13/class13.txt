@@ -1,0 +1,9 @@
+# Dockers
+
+# commands
+
+docker pull elasticsearch:7.16.1
+docker images
+docker ps # to show running containers
+docker ps -a # to show stopped containers
+
