@@ -1,0 +1,13 @@
+git automation
+
+first method
+
+git init -- initilizing empty repo
+git add remote -- add your repo url
+
+
+second method
+
+git clone <git url>
+
+This is my modification
