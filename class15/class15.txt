@@ -1,2 +1,4 @@
 ES revision
 ES automation
+
+python3 elasticsearch_operations.py -f config.json -i rao23 -r 5

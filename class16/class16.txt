@@ -1,0 +1,25 @@
+urllib3 #built in modules
+
+dir:
+
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__',
+'__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__',
+ '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+  '__weakref__', '_encode_url_methods', '_merge_pool_kwargs', '_new_pool', 'clear', 'connection_from_context',
+   'connection_from_host', 'connection_from_pool_key', 'connection_from_url', 'connection_pool_kw', 'headers',
+    'key_fn_by_scheme',
+ 'pool_classes_by_scheme', 'pools', 'proxy', 'request', 'request_encode_body', 'request_encode_url', 'urlopen']
+
+data dir:
+
+['CONTENT_DECODERS', 'DECODER_ERROR_CLASSES', 'REDIRECT_STATUSES', '__abstractmethods__', '__class__', '__del__', '__delattr__', '__dict__', '__dir__', '__doc__',
+'__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__',
+'__lt__', '__module__', '__ne__', '__new__', '__next__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+ '_abc_cache', '_abc_negative_cache', '_abc_negative_cache_version', '_abc_registry', '_body', '_checkClosed', '_checkReadable', '_checkSeekable', '_checkWritable',
+  '_connection', '_decode', '_decoder', '_error_catcher', '_flush_decoder', '_fp', '_fp_bytes_read', '_handle_chunk', '_init_decoder', '_init_length', '_original_response',
+   '_pool', '_request_url', '_update_chunk_length', 'auto_close', 'chunk_left', 'chunked', 'close', 'closed', 'connection', 'data', 'decode_content',
+    'enforce_content_length', 'fileno', 'flush', 'from_httplib', 'get_redirect_location', 'getheader', 'getheaders', 'geturl', 'headers', 'info', 'isatty',
+     'isclosed', 'length_remaining', 'msg', 'read', 'read_chunked', 'readable', 'readinto', 'readline', 'readlines', 'reason', 'release_conn', 'retries',
+      'seek', 'seekable', 'status', 'stream', 'strict', 'supports_chunked_reads', 'tell', 'truncate', 'version', 'writable', 'writelines']
+
+-- requests #3r party module
