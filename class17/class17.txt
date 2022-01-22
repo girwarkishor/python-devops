@@ -11,3 +11,111 @@ second method
 git clone <git url>
 
 This is my modification
+
+
+add/ commit/ push
+
+
+
+E:\divyaprojects\visualpathdevops>git -b checkout sample_branch
+unknown option: -b
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+E:\divyaprojects\visualpathdevops>git checkout -b sample_branch
+Switched to a new branch 'sample_branch'
+A       class17/class17.txt
+A       class17/git_automation.py
+
+E:\divyaprojects\visualpathdevops>git branch
+  master
+* sample_branch
+
+E:\divyaprojects\visualpathdevops>git status
+On branch sample_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   class17/class17.txt
+        new file:   class17/git_automation.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   class17/class17.txt
+        modified:   class17/git_automation.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        .vagrant/
+        Vagrantfile
+        class10/file_repo/
+        class11/id_rsa
+        class15/__pycache__/
+        class15/high_level.png
+        class6/__pycache__/
+        class7/example1/__pycache__/
+        class8/example1/.vagrant/
+        class8/example1/Vagrantfile
+        class8/example1/__pycache__/
+        id_rsa
+
+
+E:\divyaprojects\visualpathdevops>git add class17/*
+
+E:\divyaprojects\visualpathdevops>git status
+On branch sample_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   class17/class17.txt
+        new file:   class17/git_automation.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        .vagrant/
+        Vagrantfile
+        class10/file_repo/
+        class11/id_rsa
+        class15/__pycache__/
+        class15/high_level.png
+        class6/__pycache__/
+        class7/example1/__pycache__/
+        class8/example1/.vagrant/
+        class8/example1/Vagrantfile
+        class8/example1/__pycache__/
+        id_rsa
+
+
+E:\divyaprojects\visualpathdevops>git commit -m "demo git cli"
+[sample_branch 57e6080] demo git cli
+ 2 files changed, 19 insertions(+)
+ create mode 100644 class17/class17.txt
+ create mode 100644 class17/git_automation.py
+
+E:\divyaprojects\visualpathdevops>git push
+fatal: The current branch sample_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin sample_branch
+
+
+E:\divyaprojects\visualpathdevops>git push --set-upstream origin sample_branch
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 560 bytes | 112.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote:
+remote: To create a merge request for sample_branch, visit:
+remote:   https://gitlab.com/parameswara/devops-eswar/-/merge_requests/new?merge_request%5Bsource_branch%5D=sample_branch
+remote:
+To https://gitlab.com/parameswara/devops-eswar.git
+ * [new branch]      sample_branch -> sample_branch
+Branch 'sample_branch' set up to track remote branch 'sample_branch' from 'origin'.
+
+E:\divyaprojects\visualpathdevops>
