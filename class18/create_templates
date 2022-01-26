@@ -1,0 +1,17 @@
+from string import Template
+
+# string template
+
+# sample_template = Template("this is $name")
+# final_document = sample_template.substitute({'name': "kuna"})
+#
+# print(final_document)
+
+# file template
+
+with open("terraform_main.template", "r") as aws_template:
+    file_data = aws_template.read()
+    template_data = Template(file_data)
+    str_data = template_data.substitute({"providername": "aws", "region":"us-ashburn1", "key":"112233"})
+    with open("main.tf", "w+") as main_file:
+        main_file.write(str_data)

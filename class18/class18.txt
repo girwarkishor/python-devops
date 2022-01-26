@@ -1,0 +1,8 @@
+Templating using python
+xml and yaml parsing
+
+
+ 'append', 'attrib', 'clear', 'extend', 'find', 'findall', 'findtext',
+  'get', 'getchildren', 'getiterator', 'insert', 'items', 'iter', 'iterfind',
+   'itertext', 'keys', 'makeelement', 'remove', 'set', 'tag', 'tail', 'text']
+REST --> soap

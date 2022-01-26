@@ -1,0 +1,4 @@
+provider "$providername" {
+  region = "$region"
+  key = "$key"
+}
