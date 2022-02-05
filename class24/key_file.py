@@ -8,11 +8,7 @@ client = boto3.client(
     region_name=os.environ["region_name"]
 )
 
-
-
 response = client.create_key_pair(KeyName="KUNA_KEY_PAIR")
-
-
 print(response)
 
 # response = client.delete_key_pair(KeyName='KUNA_KEY_PAIR')
