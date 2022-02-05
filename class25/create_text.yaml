@@ -1,0 +1,6 @@
+- hosts: local
+  tasks:
+  - name: create a text file
+    file:
+      path: "kuna_ansible.txt"
+      state: touch

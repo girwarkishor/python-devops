@@ -51,7 +51,8 @@
 #
 # print(func(2,3, 5,6,7))
 
-
+def kuna():
+    return "this is my name"
 
 
 

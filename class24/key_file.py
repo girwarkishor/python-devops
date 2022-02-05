@@ -12,4 +12,10 @@ client = boto3.client(
 
 response = client.create_key_pair(KeyName="KUNA_KEY_PAIR")
 
+import pdb
+pdb.set_trace()
+
 print(response)
+
+# response = client.delete_key_pair(KeyName='KUNA_KEY_PAIR')
+# print(response)
