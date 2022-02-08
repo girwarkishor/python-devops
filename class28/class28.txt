@@ -1,0 +1,7 @@
+Kubernetes
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
+https://minikube.sigs.k8s.io/docs/start/
+
+
