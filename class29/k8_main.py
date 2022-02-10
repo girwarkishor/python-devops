@@ -28,11 +28,11 @@ containers.append(containers_pod)
 
 
 pod_spec = client.V1PodSpec(containers=containers)
-pod_metadata = client.V1ObjectMeta(name="my-pod", namespace="default")
+pod_metadata = client.V1ObjectMeta(name="my-pod", namespace="kuna")
 
 pod_body = client.V1Pod(api_version='v1', kind="Pod", metadata=pod_metadata, spec=pod_spec)
 
-v1.create_namespaced_pod(namespace="default", body=pod_body)
+v1.create_namespaced_pod(namespace="kuna", body=pod_body)
 
 
 
