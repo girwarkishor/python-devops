@@ -1,0 +1,3 @@
+list out nodes    # done
+ssh to the node #done
+add our authorized key # done
