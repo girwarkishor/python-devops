@@ -1,0 +1,5 @@
+setup.py
+kuna.egg-info/PKG-INFO
+kuna.egg-info/SOURCES.txt
+kuna.egg-info/dependency_links.txt
+kuna.egg-info/top_level.txt

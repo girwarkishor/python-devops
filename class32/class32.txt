@@ -1,0 +1,385 @@
+packaging
+
+
+
+python3 setup.py --command-packages=stdeb.command bdist_deb
+
+
+
+E:\divyaprojects\irfan-demo>vagrant ssh
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-91-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.comWelcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-91-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat 12 Feb 2022 02:54:24 AM UTC
+
+  System load:  0.2                Processes:                127
+  Usage of /:   16.8% of 30.88GB   Users logged in:          0
+  Memory usage: 24%                IPv4 address for docker0: 172.17.0.1
+  Swap usage:   0%                 IPv4 address for eth0:    10.0.2.15
+
+
+This system is built by the Bento project by Chef Software
+More information can be found at https://github.com/chef/bento
+Last login: Fri Feb 11 17:14:29 2022 from 10.0.2.2
+vagrant@vagrant:~$ sudo -i
+root@vagrant:~# apt-get install python-stdeb
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package python-stdeb is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+However the following packages replace it:
+  python3-stdeb
+
+E: Package 'python-stdeb' has no installation candidate
+root@vagrant:~# apt-get update
+Hit:1 https://download.docker.com/linux/ubuntu focal InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1,572 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [302 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [801 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [114 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [902 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [200 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages [1,238 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu focal-security/main Translation-en [217 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [748 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu focal-security/restricted Translation-en [107 kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu focal-security/universe amd64 Packages [676 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu focal-security/universe Translation-en [115 kB]
+Fetched 7,330 kB in 28s (258 kB/s)
+Reading package lists... Done
+root@vagrant:~# apt-get install python-stdeb
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package python-stdeb is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+However the following packages replace it:
+  python3-stdeb
+
+E: Package 'python-stdeb' has no installation candidate
+root@vagrant:~# apt-get install python3-stdeb
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  apt-file autoconf automake autopoint autotools-dev debhelper dh-autoreconf dh-strip-nondeterminism dwz gettext intltool-debian libapt-pkg-perl
+  libarchive-cpio-perl libarchive-zip-perl libcroco3 libdebhelper-perl libexporter-tiny-perl libfile-stripnondeterminism-perl liblist-moreutils-perl
+  libltdl-dev libmail-sendmail-perl libregexp-assemble-perl libsub-override-perl libsys-hostname-long-perl libtool m4 po-debconf python3-all
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc dh-make gettext-doc libasprintf-dev libgettextpo-dev libtool-doc gfortran | fortran95-compiler gcj-jdk
+  m4-doc libmail-box-perl python3-all-dev
+The following NEW packages will be installed:
+  apt-file autoconf automake autopoint autotools-dev debhelper dh-autoreconf dh-strip-nondeterminism dwz gettext intltool-debian libapt-pkg-perl
+  libarchive-cpio-perl libarchive-zip-perl libcroco3 libdebhelper-perl libexporter-tiny-perl libfile-stripnondeterminism-perl liblist-moreutils-perl
+  libltdl-dev libmail-sendmail-perl libregexp-assemble-perl libsub-override-perl libsys-hostname-long-perl libtool m4 po-debconf python3-all
+  python3-stdeb
+0 upgraded, 29 newly installed, 0 to remove and 40 not upgraded.
+Need to get 4,635 kB of archives.
+After this operation, 15.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libapt-pkg-perl amd64 0.1.36build3 [68.5 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libexporter-tiny-perl all 1.002001-1 [35.5 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu focal/main amd64 liblist-moreutils-perl amd64 0.416-1build5 [55.5 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 libregexp-assemble-perl all 0.36-1 [77.5 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 apt-file all 3.2.2 [27.6 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu focal/main amd64 m4 amd64 1.4.18-4 [199 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu focal/main amd64 autotools-dev all 20180224.1 [39.6 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu focal/main amd64 autopoint all 0.19.8.1-10build1 [412 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libtool all 2.4.6-14 [161 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu focal/main amd64 dh-autoreconf all 19 [16.1 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libdebhelper-perl all 12.10ubuntu1 [62.1 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libarchive-zip-perl all 1.67-2 [90.5 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libsub-override-perl all 0.09-2 [9,532 B]
+Get:16 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libfile-stripnondeterminism-perl all 1.7.0-1 [15.9 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu focal/main amd64 dh-strip-nondeterminism all 1.7.0-1 [5,228 B]
+Get:18 http://us.archive.ubuntu.com/ubuntu focal/main amd64 dwz amd64 0.13-5 [151 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libcroco3 amd64 0.6.13-1 [82.5 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu focal/main amd64 gettext amd64 0.19.8.1-10build1 [895 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu focal/main amd64 intltool-debian all 0.35.0+20060710.5 [24.9 kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu focal/main amd64 po-debconf all 1.0.21 [233 kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu focal/main amd64 debhelper all 12.10ubuntu1 [877 kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libarchive-cpio-perl all 0.10-1 [9,644 B]
+Get:25 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libltdl-dev amd64 2.4.6-14 [162 kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libsys-hostname-long-perl all 1.5-1 [11.7 kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libmail-sendmail-perl all 0.80-1 [22.6 kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu focal/main amd64 python3-all amd64 3.8.2-0ubuntu2 [1,104 B]
+Get:29 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 python3-stdeb all 0.8.5-3 [46.1 kB]
+Fetched 4,635 kB in 18s (257 kB/s)
+Selecting previously unselected package libapt-pkg-perl.
+(Reading database ... 46680 files and directories currently installed.)
+Preparing to unpack .../00-libapt-pkg-perl_0.1.36build3_amd64.deb ...
+Unpacking libapt-pkg-perl (0.1.36build3) ...
+Selecting previously unselected package libexporter-tiny-perl.
+Preparing to unpack .../01-libexporter-tiny-perl_1.002001-1_all.deb ...
+Unpacking libexporter-tiny-perl (1.002001-1) ...
+Selecting previously unselected package liblist-moreutils-perl.
+Preparing to unpack .../02-liblist-moreutils-perl_0.416-1build5_amd64.deb ...
+Unpacking liblist-moreutils-perl (0.416-1build5) ...
+Selecting previously unselected package libregexp-assemble-perl.
+Preparing to unpack .../03-libregexp-assemble-perl_0.36-1_all.deb ...
+Unpacking libregexp-assemble-perl (0.36-1) ...
+Selecting previously unselected package apt-file.
+Preparing to unpack .../04-apt-file_3.2.2_all.deb ...
+Unpacking apt-file (3.2.2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../05-m4_1.4.18-4_amd64.deb ...
+Unpacking m4 (1.4.18-4) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../06-autoconf_2.69-11.1_all.deb ...
+Unpacking autoconf (2.69-11.1) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../07-autotools-dev_20180224.1_all.deb ...
+Unpacking autotools-dev (20180224.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../08-automake_1%3a1.16.1-4ubuntu6_all.deb ...
+Unpacking automake (1:1.16.1-4ubuntu6) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../09-autopoint_0.19.8.1-10build1_all.deb ...
+Unpacking autopoint (0.19.8.1-10build1) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../10-libtool_2.4.6-14_all.deb ...
+Unpacking libtool (2.4.6-14) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../11-dh-autoreconf_19_all.deb ...
+Unpacking dh-autoreconf (19) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../12-libdebhelper-perl_12.10ubuntu1_all.deb ...
+Unpacking libdebhelper-perl (12.10ubuntu1) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../13-libarchive-zip-perl_1.67-2_all.deb ...
+Unpacking libarchive-zip-perl (1.67-2) ...
+Selecting previously unselected package libsub-override-perl.
+Preparing to unpack .../14-libsub-override-perl_0.09-2_all.deb ...
+Unpacking libsub-override-perl (0.09-2) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../15-libfile-stripnondeterminism-perl_1.7.0-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.7.0-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../16-dh-strip-nondeterminism_1.7.0-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.7.0-1) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../17-dwz_0.13-5_amd64.deb ...
+Unpacking dwz (0.13-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../18-libcroco3_0.6.13-1_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.13-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../19-gettext_0.19.8.1-10build1_amd64.deb ...
+Unpacking gettext (0.19.8.1-10build1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../20-intltool-debian_0.35.0+20060710.5_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.5) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../21-po-debconf_1.0.21_all.deb ...
+Unpacking po-debconf (1.0.21) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../22-debhelper_12.10ubuntu1_all.deb ...
+Unpacking debhelper (12.10ubuntu1) ...
+Selecting previously unselected package libarchive-cpio-perl.
+Preparing to unpack .../23-libarchive-cpio-perl_0.10-1_all.deb ...
+Unpacking libarchive-cpio-perl (0.10-1) ...
+Selecting previously unselected package libltdl-dev:amd64.
+Preparing to unpack .../24-libltdl-dev_2.4.6-14_amd64.deb ...
+Unpacking libltdl-dev:amd64 (2.4.6-14) ...
+Selecting previously unselected package libsys-hostname-long-perl.
+Preparing to unpack .../25-libsys-hostname-long-perl_1.5-1_all.deb ...
+Unpacking libsys-hostname-long-perl (1.5-1) ...
+Selecting previously unselected package libmail-sendmail-perl.
+Preparing to unpack .../26-libmail-sendmail-perl_0.80-1_all.deb ...
+Unpacking libmail-sendmail-perl (0.80-1) ...
+Selecting previously unselected package python3-all.
+Preparing to unpack .../27-python3-all_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking python3-all (3.8.2-0ubuntu2) ...
+Selecting previously unselected package python3-stdeb.
+Preparing to unpack .../28-python3-stdeb_0.8.5-3_all.deb ...
+Unpacking python3-stdeb (0.8.5-3) ...
+Setting up libapt-pkg-perl (0.1.36build3) ...
+Setting up libarchive-zip-perl (1.67-2) ...
+Setting up libdebhelper-perl (12.10ubuntu1) ...
+Setting up m4 (1.4.18-4) ...
+Setting up python3-all (3.8.2-0ubuntu2) ...
+Setting up autotools-dev (20180224.1) ...
+Setting up autopoint (0.19.8.1-10build1) ...
+Setting up libcroco3:amd64 (0.6.13-1) ...
+Setting up autoconf (2.69-11.1) ...
+Setting up dwz (0.13-5) ...
+Setting up libarchive-cpio-perl (0.10-1) ...
+Setting up libsub-override-perl (0.09-2) ...
+Setting up libexporter-tiny-perl (1.002001-1) ...
+Setting up libregexp-assemble-perl (0.36-1) ...
+Setting up libsys-hostname-long-perl (1.5-1) ...
+Setting up automake (1:1.16.1-4ubuntu6) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.7.0-1) ...
+Setting up gettext (0.19.8.1-10build1) ...
+Setting up libtool (2.4.6-14) ...
+Setting up liblist-moreutils-perl (0.416-1build5) ...
+Setting up apt-file (3.2.2) ...
+The system-wide cache is empty. You may want to run 'apt-file update'
+as root to update the cache.
+Setting up intltool-debian (0.35.0+20060710.5) ...
+Setting up libmail-sendmail-perl (0.80-1) ...
+Setting up libltdl-dev:amd64 (2.4.6-14) ...
+Setting up dh-strip-nondeterminism (1.7.0-1) ...
+Setting up po-debconf (1.0.21) ...
+Setting up dh-autoreconf (19) ...
+Setting up debhelper (12.10ubuntu1) ...
+Setting up python3-stdeb (0.8.5-3) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for install-info (6.7.0.dfsg.2-5) ...
+root@vagrant:~# ls
+snap
+root@vagrant:~# python3 -m pip install nvpy
+Collecting nvpy
+  Downloading nvpy-2.1.0.tar.gz (1.3 MB)
+     |████████████████████████████████| 1.3 MB 3.4 MB/s
+Collecting Markdown
+  Downloading Markdown-3.3.6-py3-none-any.whl (97 kB)
+     |████████████████████████████████| 97 kB 4.8 MB/s
+Collecting docutils
+  Downloading docutils-0.18.1-py2.py3-none-any.whl (570 kB)
+     |████████████████████████████████| 570 kB 2.6 MB/s
+Collecting simplenote>=2.1.4
+  Downloading simplenote-2.1.4.tar.gz (8.2 kB)
+Collecting importlib-metadata>=4.4; python_version < "3.10"
+  Downloading importlib_metadata-4.11.0-py3-none-any.whl (17 kB)
+Requirement already satisfied: zipp>=0.5 in /usr/lib/python3/dist-packages (from importlib-metadata>=4.4; python_version < "3.10"->Markdown->nvpy) (1.
+0.0)
+Building wheels for collected packages: nvpy, simplenote
+  Building wheel for nvpy (setup.py) ... done
+  Created wheel for nvpy: filename=nvpy-2.1.0-py3-none-any.whl size=1277455 sha256=5412717ccb630e8ffbf0f2d9d176e52ecc23b94a7458e39189eded672e150788
+  Stored in directory: /root/.cache/pip/wheels/d0/b7/70/eb4d7558f5379cdce577ed1646ee2aa0f28d8de89a31ccaeb7
+  Building wheel for simplenote (setup.py) ... done
+  Created wheel for simplenote: filename=simplenote-2.1.4-py3-none-any.whl size=8300 sha256=268fcee4ab30fd80affc88322196885c6ec7fdce968721c78b6f167e7a
+8ad33d
+  Stored in directory: /root/.cache/pip/wheels/3d/c6/7e/bd2017e26b532fb46ffb939cfc72831265fb9bbc766b763efb
+Successfully built nvpy simplenote
+Installing collected packages: importlib-metadata, Markdown, docutils, simplenote, nvpy
+  Attempting uninstall: importlib-metadata
+    Found existing installation: importlib-metadata 1.5.0
+    Not uninstalling importlib-metadata at /usr/lib/python3/dist-packages, outside environment /usr
+    Can't uninstall 'importlib-metadata'. No files were found to uninstall.
+Successfully installed Markdown-3.3.6 docutils-0.18.1 importlib-metadata-4.11.0 nvpy-2.1.0 simplenote-2.1.4
+root@vagrant:~# cd E:\divyaprojects\irfan-demo\class32\python_packaging
+-bash: cd: E:divyaprojectsirfan-democlass32python_packaging: No such file or directory
+root@vagrant:~# cd /vagrant
+root@vagrant:/vagrant# ls
+2127_little_fashion      class1   class11  class2  class32  class5  class7  class9        index.html  python_Debugger.py  Vagrantfile
+2127_little_fashion.zip  class10  class12  class3  class4   class6  class8  google_files  practice    TODO_LIST.txt
+root@vagrant:/vagrant# cd class32/python_packaging/
+root@vagrant:/vagrant/class32/python_packaging# ls
+custom_script.py  __init__.py  setup.py
+root@vagrant:/vagrant/class32/python_packaging# python3 setup.py --command-packages=stdeb.command dist_deb
+Traceback (most recent call last):
+  File "setup.py", line 3, in <module>
+    from nvpy import nvpy
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/nvpy.py", line 38, in <module>
+    from .notes_db import NotesDB, SyncError, ReadError, WriteError
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/notes_db.py", line 21, in <module>
+    from . import utils
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/utils.py", line 13, in <module>
+    from . import tk
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/tk.py", line 9, in <module>
+    from tkinter import *
+ModuleNotFoundError: No module named 'tkinter'
+root@vagrant:/vagrant/class32/python_packaging# python3 -m pip install tkinter
+ERROR: Could not find a version that satisfies the requirement tkinter (from versions: none)
+ERROR: No matching distribution found for tkinter
+root@vagrant:/vagrant/class32/python_packaging# python3 -m pip install tk
+Collecting tk
+  Downloading tk-0.1.0-py3-none-any.whl (3.9 kB)
+Installing collected packages: tk
+Successfully installed tk-0.1.0
+root@vagrant:/vagrant/class32/python_packaging# python3 setup.py --command-packages=stdeb.command dist_deb
+Traceback (most recent call last):
+  File "setup.py", line 3, in <module>
+    from nvpy import nvpy
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/nvpy.py", line 38, in <module>
+    from .notes_db import NotesDB, SyncError, ReadError, WriteError
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/notes_db.py", line 21, in <module>
+    from . import utils
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/utils.py", line 13, in <module>
+    from . import tk
+  File "/usr/local/lib/python3.8/dist-packages/nvpy/tk.py", line 9, in <module>
+    from tkinter import *
+ModuleNotFoundError: No module named 'tkinter'
+root@vagrant:/vagrant/class32/python_packaging# python3
+Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tkinter
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'tkinter'
+>>> exit()
+root@vagrant:/vagrant/class32/python_packaging# python3 setup.py --command-packages=stdeb.command dist_deb
+usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+   or: setup.py --help [cmd1 cmd2 ...]
+   or: setup.py --help-commands
+   or: setup.py cmd --help
+
+error: invalid command 'dist_deb'
+root@vagrant:/vagrant/class32/python_packaging# python3 setup.py --command-packages=stdeb.command bdist_deb
+running bdist_deb
+running sdist_dsc
+running egg_info
+creating kuna.egg-info
+writing kuna.egg-info/PKG-INFO
+writing dependency_links to kuna.egg-info/dependency_links.txt
+writing top-level names to kuna.egg-info/top_level.txt
+writing manifest file 'kuna.egg-info/SOURCES.txt'
+reading manifest file 'kuna.egg-info/SOURCES.txt'
+writing manifest file 'kuna.egg-info/SOURCES.txt'
+running sdist
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' must be supplied too
+
+creating kuna-1.0
+creating kuna-1.0/kuna.egg-info
+copying files to kuna-1.0...
+copying setup.py -> kuna-1.0
+copying kuna.egg-info/PKG-INFO -> kuna-1.0/kuna.egg-info
+copying kuna.egg-info/SOURCES.txt -> kuna-1.0/kuna.egg-info
+copying kuna.egg-info/dependency_links.txt -> kuna-1.0/kuna.egg-info
+copying kuna.egg-info/top_level.txt -> kuna-1.0/kuna.egg-info
+Writing kuna-1.0/setup.cfg
+creating dist
+Creating tar archive
+removing 'kuna-1.0' (and everything under it)
+/bin/tar: kuna-1.0/PKG-INFO: time stamp 2022-02-12 03:13:56.6611302 is 1.244275355 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/PKG-INFO: time stamp 2022-02-12 03:13:56 is 0.581630435 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/SOURCES.txt: time stamp 2022-02-12 03:13:56 is 0.580536772 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/dependency_links.txt: time stamp 2022-02-12 03:13:56 is 0.578274428 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/top_level.txt: time stamp 2022-02-12 03:13:56 is 0.576128832 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info: time stamp 2022-02-12 03:13:56.650388 is 1.225315869 s in the future
+/bin/tar: kuna-1.0/setup.cfg: time stamp 2022-02-12 03:13:56.664057 is 1.237789267 s in the future
+/bin/tar: kuna-1.0: time stamp 2022-02-12 03:13:56.6630802 is 1.235527612 s in the future
+/bin/tar: kuna-1.0/PKG-INFO: time stamp 2022-02-12 03:13:56.6611302 is 1.144308172 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/PKG-INFO: time stamp 2022-02-12 03:13:56 is 0.470991795 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/SOURCES.txt: time stamp 2022-02-12 03:13:56 is 0.468223782 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/dependency_links.txt: time stamp 2022-02-12 03:13:56 is 0.465311764 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info/top_level.txt: time stamp 2022-02-12 03:13:56 is 0.461568616 s in the future
+/bin/tar: kuna-1.0/kuna.egg-info: time stamp 2022-02-12 03:13:56.650388 is 1.109137434 s in the future
+/bin/tar: kuna-1.0/setup.cfg: time stamp 2022-02-12 03:13:56.664057 is 1.117763716 s in the future
+/bin/tar: kuna-1.0: time stamp 2022-02-12 03:13:56.6630802 is 1.112223 s in the future
+error: [Errno 1] Operation not permitted: '/vagrant/class32/python_packaging/kuna-1.0.tar.gz' -> 'deb_dist/kuna_1.0.orig.tar.gz'
+root@vagrant:/vagrant/class32/python_packaging# Bpython3 setup.py --command-packages=stdeb.command bdist_deb
