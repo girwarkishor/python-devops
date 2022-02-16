@@ -1,7 +1,7 @@
 ####class1:
     ```
-    gitlab account
-    vagrant
+    gitlab account \n
+    vagrant \n
     ```
 ####class2:
     https://gitlab.com/parameswara/devops-eswar
